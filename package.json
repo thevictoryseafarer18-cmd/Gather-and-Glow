@@ -1,0 +1,29 @@
+{
+  "name": "gather-and-glow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gather & Glow — an AI-powered celebration and event planning assistant for weddings, birthdays and community events. Static front-end with an optional secure AI proxy.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "static": "python3 -m http.server 4173",
+    "test": "node test/smoke.mjs",
+    "test:proxy": "node test/proxy-test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "event-planning",
+    "wedding",
+    "budget",
+    "prototype",
+    "hackathon"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "playwright-core": "^1.49.1",
+    "axe-core": "^4.14.0"
+  }
+}
